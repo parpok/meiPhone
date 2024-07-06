@@ -60,7 +60,7 @@ struct ContentView: View {
 struct PFPView: View {
     var body: some View {
         VStack {
-            AsyncImage(url: URL(string: "https://parpok.xyz/content/avatar.png")) { image in
+            AsyncImage(url: URL(string: "https://avatars.githubusercontent.com/parpok")) { image in
                 image.resizable().scaledToFit()
             } placeholder: {
                 ProgressView(label: { Text("Looking for pfp") })
